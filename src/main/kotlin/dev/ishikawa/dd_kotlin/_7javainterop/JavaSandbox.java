@@ -15,7 +15,7 @@ public class JavaSandbox {
         private int geho = 2;
     }
 
-    static test() {
+    static void test() {
         JavaSandbox javaSandbox = new JavaSandbox();
         Nested nested = new Nested();
         Inner inner = javaSandbox.new Inner();
