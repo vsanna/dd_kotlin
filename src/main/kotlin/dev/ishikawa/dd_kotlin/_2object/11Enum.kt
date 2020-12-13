@@ -1,5 +1,6 @@
 package dev.ishikawa.dd_kotlin._2object
 
+
 fun main() {
     println(Color2.RED.signal())
     println(Color2.GREEN.signal())
@@ -7,6 +8,10 @@ fun main() {
 
     println(Color2.valueOf("RED"))
     println(Color2.values())
+
+    Hoge.VAL1(123)
+    Hoge.VAL2("hello")
+
 }
 
 /*
@@ -36,4 +41,17 @@ enum class Color2(val rgb: Int) {
 // reified??
 inline fun <reified T: Enum<T>> pringAllValues() {
     println(enumValues<T>().joinToString { it.name })
+}
+
+enum class Hoge {
+    VAL1,VAL2;
+
+    // Hoge.VAL1(123) というシンタックス
+    operator fun invoke(n: Int) {
+        println(this.name + n.toString())
+    }
+
+    operator fun invoke(msg: String) {
+        println(this.ordinal.toString() + msg)
+    }
 }

@@ -1,4 +1,4 @@
-package dev.ishikawa.dd_kotlin
+package dev.ishikawa.dd_kotlin._4collection
 
 fun main() {
     array()
