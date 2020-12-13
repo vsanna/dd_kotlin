@@ -7,8 +7,8 @@ import kotlinx.coroutines.runBlocking
 /*
 * # goal
 * - 低レベルの基底を理解する
-*     - suspendCoroutine
-*     - ContinuationImpl
+*     - suspendCoroutineUninterceptedOrReturn
+*     - startCoroutineUninterceptedOrReturn
 *
 *
 * */

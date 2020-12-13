@@ -3,8 +3,9 @@ package dev.ishikawa.dd_coroutine.usecases
 import kotlinx.coroutines.*
 
 /*
+* # goal:
 * - runBlockingの中でlaunchする
-*     - その挙動の大枠理解
+*     - その挙動を実際におって理解する
 * - Dispatchers.Defaultの挙動
 *     - Dispatchers.IOなどの言及はするが内部まで見るのはDefaultのみ。
 *     - CoroutineSchedulerのglobalQueueに入って、workerがそれを貪欲に取り出す

@@ -6,11 +6,14 @@ import kotlin.coroutines.EmptyCoroutineContext
 
 /*
 * scope/contextの理解
-* - contextはくっつけられる
+* - context
+*     - ただの箱で、簡単に合成できる
+*     - contextの作られるタイミング
+*     - DispatcherとJobが大事
 * - scopeの意義
 *   - scopeが作られるタイミング
-*
 *   - scopeのnest
+*   - Structured Concurrencyって?
 *
 *
 

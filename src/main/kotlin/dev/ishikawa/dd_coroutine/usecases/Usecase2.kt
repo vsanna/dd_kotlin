@@ -4,7 +4,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 
 /*
-* goal
+* goal: Continuation, Dispatcher, 実行者(joinBlocking/Worker) の関係を理解する
 * - runBlocking, BlockingCoroutine, BlockingEventLoop, joinRunningを理解する
 * - continuationの動き
 * - completable = callerのcontinuation

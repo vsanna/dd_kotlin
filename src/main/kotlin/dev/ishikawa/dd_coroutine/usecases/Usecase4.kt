@@ -6,7 +6,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 /*
-* - coroutine in coroutine の挙動
+* # goal
+* - coroutine in coroutine の挙動を実際におって理解する. Usecase3と同じことをする
 *
 * mainがdispatchされて取り出される
 *   同期的にouterをlaunchして(=dispatchして),自分自身はcomplete
